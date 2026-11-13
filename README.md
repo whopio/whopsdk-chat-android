@@ -24,7 +24,7 @@ Then in the app module:
 
 ```kotlin
 dependencies {
-    implementation("com.whop:chat-sdk:0.1.1")
+    implementation("com.whop:chat-sdk:0.1.2")
 }
 ```
 
