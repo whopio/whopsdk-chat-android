@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.3] - 2026-11-18
+
+- Channels in `WhopDMsListView` (`showsChannels = true`) show as unread when their latest post from someone else is newer than the user's last view, as the iOS SDK does. Before this, the list used only the server's unread flag and notification badges, which the SDK never loads, so channels rarely showed as unread.
+- `WhopChatView` marks a channel read while the user is at the bottom of it, and again as new posts arrive. Before this, only opening a channel from `WhopDMsListView` marked it read.
+
 ## [0.1.2] - 2026-11-12
 
 - Live chat: the SDK now opens its realtime connection while a user is signed in and one of its views is on screen, as the iOS SDK does, so typing indicators, new messages, reactions, read receipts and DM online status update without a refresh. Before this, the SDK never connected, so none of these arrived and the user's own typing was never sent.
